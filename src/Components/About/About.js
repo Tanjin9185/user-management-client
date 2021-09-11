@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div>
-            upcoming about.
+        <div className="text-center text-4xl text-red-400">
+            upcoming ....
         </div>
     );
 };

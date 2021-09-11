@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import UserForm from "./Components/Form/UserForm";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
@@ -22,7 +23,7 @@ function App() {
               <UserForm></UserForm>
               <Page></Page>
             </Route>
-            <Route path="/home">
+            <Route path="/">
               <Home></Home>
             </Route>
             <Route path="/about">
@@ -35,6 +36,7 @@ function App() {
               <NotFound />
             </Route>
           </Switch>
+          <Footer></Footer>
         </div>
       </Router>
     </div>

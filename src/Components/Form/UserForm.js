@@ -26,7 +26,7 @@ function UserForm() {
 
   const submitForm = (data, e) => {
     console.log(data);
-    fetch("http://localhost:5000/adduser", {
+    fetch("https://warm-dusk-64985.herokuapp.com/adduser", {
       method: "POST",
       headers: {
         'content-type': 'application/json'
@@ -36,7 +36,6 @@ function UserForm() {
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          console.log(data);
           alert("user added successfully");
           e.preventDefault();
         }
